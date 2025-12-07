@@ -120,25 +120,6 @@ Combinations, permutations, constraints
 
 Multiple problems under each category — updated continuously.
 
-🗂️ Folder Structure
-📦 DSA-Journey
- ┣ 📁 Arrays-Strings
- ┣ 📁 Linked-List
- ┣ 📁 Stack-Queue
- ┣ 📁 Two-Pointers
- ┣ 📁 Sliding-Window
- ┣ 📁 Binary-Search
- ┣ 📁 Trees
- ┣ 📁 Graphs
- ┣ 📁 Dynamic-Programming
- ┣ 📁 Heaps
- ┣ 📁 Greedy
- ┣ 📁 Backtracking
- ┣ 📁 Math-Bit
- ┣ 📁 Train
- ┣ 📁 Test
- ┣ 📄 README.md
-
 🧩 My Approach to Learning DSA
 
 I follow a structured learning cycle:
