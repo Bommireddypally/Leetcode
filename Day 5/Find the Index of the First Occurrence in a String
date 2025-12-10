@@ -1,28 +1,22 @@
 28. Find the Index of the First Occurrence in a String
-class Solution {
-    public int strStr(String haystack, String needle) {
-        String w="";
-        int k;
-        if(needle.length()==1)
-        {
-            char ch=needle.charAt(0);
-            for(int i=0;i<haystack.length();i++)
-            {
-                if(haystack.charAt(i)==ch)
-                return i;
-            }
-        }
-        else
-        {
-        for(int i=0;i<=haystack.length()-needle.length();i++)
-        {
-            k=i+needle.length();
-            w=haystack.substring(i,k);
-            if(w.equals(needle)==true)
-            return i;
-            
-        }
-        }
-        return -1;
-    }
-}
+class Solution(object):
+    def strStr(self, haystack, needle):
+        """
+        :type haystack: str
+        :type needle: str
+        :rtype: int
+        """
+        n, m = len(haystack), len(needle)
+    
+    # Edge case: needle longer than haystack
+        if m > n:
+            return -1
+    
+    # Slide window of length m across haystack
+        for i in range(n - m + 1):
+            if haystack[i:i + m] == needle:
+                return i
+    
+        return -1
+        
+        
