@@ -1,0 +1,42 @@
+#981. Time Based Key-Value Store
+class TimeMap:
+
+    def __init__(self):
+        self.time_map = {}
+
+    def set(self, key: str, value: str, timestamp: int) -> None:
+        if key in self.time_map:
+            self.time_map[key].append((timestamp, value))
+        else:
+            self.time_map[key] = [(timestamp, value)]
+        
+
+    def get(self, key: str, timestamp: int) -> str:
+        if key not in self.time_map:
+            return ""
+        key_list = self.time_map[key]
+        L, R = 0, len(key_list) - 1
+        if timestamp < key_list[L][0]:
+            return ""
+        elif timestamp >= key_list[R][0]:
+            return key_list[R][1]
+        cur = ""
+        while L <= R:
+            M = (L + R) // 2
+            if key_list[M][0] == timestamp:
+                return key_list[M][1]
+            elif key_list[M][0] > timestamp:
+                R = M - 1
+            else:
+                cur = key_list[M][1]
+                L = M + 1
+            
+        return cur
+        
+
+            
+
+# Your TimeMap object will be instantiated and called as such:
+# obj = TimeMap()
+# obj.set(key,value,timestamp)
+# param_2 = obj.get(key,timestamp)
