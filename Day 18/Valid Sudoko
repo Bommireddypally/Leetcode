@@ -1,0 +1,31 @@
+class Solution(object):
+    def isValidSudoku(self, board):
+        """
+        :type board: List[List[str]]
+        :rtype: bool
+        """
+        rows = [set() for _ in range(9)]   # one set per row
+        cols = [set() for _ in range(9)]   # one set per column
+        box  = [set() for _ in range(9)]   # one set per 3x3 box
+
+        for r in range(9):
+            for c in range(9):
+                val = board[r][c]  # \U0001f539 current cell value (digit or '.')
+                
+                if val == '.':
+                    continue  # skip empty cells
+
+                # Identify which 3x3 box the cell belongs to
+                b = (r // 3) * 3 + (c // 3)
+
+                # If digit already exists in the same row, column, or box → invalid
+                if val in rows[r] or val in cols[c] or val in box[b]:
+                    return False
+
+                # Otherwise, record the digit in the respective row, col, and box
+                rows[r].add(val)
+                cols[c].add(val)
+                box[b].add(val)
+
+        # If no duplicates found, board is valid
+        return True
