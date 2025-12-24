@@ -1,0 +1,15 @@
+sd={}
+        j=0
+        for i in s:
+            if i in sd:
+                if sd[i] == t[j]:
+                    pass
+                else:
+                    return False
+            else:
+                if t[j] not in sd.values():
+                    sd[i]=t[j]
+                else:
+                    return False
+            j+=1
+        return True
