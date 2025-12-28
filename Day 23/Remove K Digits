@@ -1,0 +1,41 @@
+class Solution(object):
+    def removeKdigits(self, num, k):
+        """
+        :type num: str
+        :type k: int
+        :rtype: str
+        """
+        n = len(num)
+        if n == k:
+            return "0"
+        """
+        i, ans = 0, ""
+        while num :
+            print(i)
+            print(num)
+            if k == i:
+                min_d = num[-1]
+                break
+            else:
+                min_d = min(num[0 : -k + i])
+            #print("{}".format(num[:-k+i]))
+            idx = list(num).index(min_d)
+            num = num[idx + 1:]
+            i += 1
+            ans += min_d
+
+        ans += min_d
+        return ans
+        """
+        stack = []
+        c = k
+        for curr in num:
+            while c and stack and stack[-1] > curr:
+                stack.pop()
+                c -= 1
+            stack.append(curr)
+        stack = stack[: n - k]
+        ans = "".join(stack).lstrip('0')
+        return  "0" if ans == "" else ans
+        
+        
