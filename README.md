@@ -1,211 +1,223 @@
-# Leetcode
-A well-organized repository documenting my structured approach to Data Structures &amp; Algorithms.
-Welcome to my complete Data Structures & Algorithms learning journey — a long-term project where I solve LeetCode problems, master core patterns, and prepare for Software Engineering Internships (2026) and MAANG interviews.
+# 🚀 LeetCode Journey — Data Structures & Algorithms
 
-This repository documents everything:
+This repository documents my **structured journey of mastering Data Structures and Algorithms using LeetCode**.  
+Instead of randomly solving problems, I followed a **day-by-day, pattern-oriented roadmap** to build strong fundamentals required for **software engineering internships and full-time roles**.
 
-Progress
+The focus of this repository is not just solving problems, but **developing intuition, recognizing patterns, and writing clean, optimized solutions**.
 
-Notes
+---
 
-Train/Test learning modules
+## 🎯 Goals of This Repository
 
-Topic-wise problem sets
+- Build strong foundations in **DSA**
+- Prepare for **technical interviews** (Internships + Full-time)
+- Learn **problem-solving patterns**, not memorized solutions
+- Maintain a **disciplined, consistent daily practice**
+- Create a **transparent learning log** for self-review and recruiters
 
-Clean, optimized solutions
+---
 
-My continuous growth as an engineer
+## 🗂️ Structure of the Repository
 
-🚀 Why I Built This Repository
+- Problems are solved **day-wise**
+- Each solution includes:
+  - Clean code
+  - Short explanation of the approach
+  - Time & space complexity
+- Difficulty gradually increases from **Easy → Medium → Hard**
+- Topics are grouped logically (Arrays → Hashing → Stacks → Linked Lists, etc.)
 
-I want to:
+---
 
-Build strong problem-solving skills
+## 🧠 Intuition & Problem-Solving Patterns (Days 1–25)
 
-Become interview-ready for MAANG and top tech companies
+This journey follows a **pattern-first approach**.  
+Instead of memorizing solutions, I focused on recognizing **recurring techniques** that appear across interviews.
 
-Track my progress publicly
+---
 
-Stay consistent with DSA
+### 🔹 Arrays & Strings (Days 1–5)
 
-Learn patterns, not just solutions
+**Key intuition:**  
+> Most array and string problems are about controlling indices efficiently and avoiding unnecessary extra space.
 
-Share my journey with others preparing for coding interviews
+**Patterns learned:**
+- Two pointers for sorted arrays or shrinking windows
+- In-place modification
+- Prefix and suffix accumulation
 
-This repo helps me stay accountable and organized.
+**Representative problems:**
+- Merge Sorted Array  
+- Remove Duplicates from Sorted Array  
+- Product of Array Except Self  
 
-📚 What This Repository Contains
+---
 
-This repo is divided into modules, each representing a core DSA topic.
+### 🔹 Hashing & Frequency Counting (Days 6–7)
 
-1️⃣ Train/Test Learning Sets
+**Key intuition:**  
+> If a problem involves counting, grouping, or fast lookup — hashing is usually the answer.
 
-Structured 50–50 split across topics to simulate a real DSA course:
+**Patterns learned:**
+- Frequency maps
+- Hashing strings by pattern or count
+- Space–time trade-offs
 
-Train Set → Learn patterns
+**Representative problems:**
+- Valid Anagram  
+- Group Anagrams  
+- Top K Frequent Elements  
 
-Test Set → Evaluate mastery
+---
 
-Balanced across Easy/Medium/Hard
+### 🔹 Sliding Window & Two Pointers (Days 7–9)
 
-2️⃣ Topic-Wise Solutions
+**Key intuition:**  
+> For subarrays or substrings, recomputation is expensive — sliding windows optimize it.
 
-Each folder contains:
+**Patterns learned:**
+- Fixed vs variable window
+- Expand–contract technique
+- Window state tracking using hash maps
 
-Problems
+**Representative problems:**
+- Longest Substring Without Repeating Characters  
+- Minimum Window Substring  
+- Sliding Window Maximum  
 
-Code solutions
+---
 
-Time/Space complexity
+### 🔹 Greedy Algorithms (Days 9–10, 14–15)
 
-Approaches
+**Key intuition:**  
+> Make the best local decision while ensuring future choices remain optimal.
 
-Notes & mistakes
+**Patterns learned:**
+- Local optimal → global optimal reasoning
+- Interval and jump-based greedy decisions
 
-Patterns learned
+**Representative problems:**
+- Jump Game / Jump Game II  
+- Gas Station  
+- Candy  
+- Task Scheduler  
 
-3️⃣ All LeetCode Solutions Covered
+---
 
-This includes (and will grow over time):
+### 🔹 Binary Search (Days 11–12)
 
-✔ Arrays & Strings
+**Key intuition:**  
+> Binary search is not limited to sorted arrays — it can be applied to the answer space.
 
-Basics → Sliding Window → Prefix → Two Pointers → Hard simulation problems
+**Patterns learned:**
+- Binary search on index
+- Binary search on answer (time, speed, capacity)
+- Monotonic conditions
 
-✔ Linked List
+**Representative problems:**
+- Search in Rotated Sorted Array  
+- Koko Eating Bananas  
+- Find Minimum in Rotated Sorted Array  
 
-Reversal, cycles, merging, pointers, deep concepts
+---
 
-✔ Stack / Queue
+### 🔹 Interval Problems & Scheduling (Days 13–15)
 
-Monotonic stack, Min stack, queue DLL structures
+**Key intuition:**  
+> Interval problems are solved by sorting and comparing endpoints.
 
-✔ Two Pointers
+**Patterns learned:**
+- Sorting by start time
+- Tracking current end
+- Merging vs counting overlaps
 
-Classic interview pattern
+**Representative problems:**
+- Merge Intervals  
+- Insert Interval  
+- Non-overlapping Intervals  
 
-✔ Sliding Window
+---
 
-Most common in FAANG interviews
+### 🔹 Data Structure Design (Days 16–17)
 
-✔ Binary Search
+**Key intuition:**  
+> Combine multiple data structures to meet strict time complexity requirements.
 
-On arrays, answers, templates
+**Patterns learned:**
+- HashMap + Array for O(1) operations
+- HashMap + Doubly Linked List for cache design
+- Frequency-based optimization
 
-✔ Trees & Binary Trees
+**Representative problems:**
+- Insert Delete GetRandom O(1)  
+- LRU Cache  
+- LFU Cache  
 
-DFS, BFS, recursion, LCA, construction
+---
 
-✔ Graphs
+### 🔹 Stack Fundamentals & Monotonic Stack (Days 20–23)
 
-DFS, BFS, Topological sort, Union Find, shortest path
+**Key intuition:**  
+> Stacks help when order matters and past decisions affect future outcomes.
 
-✔ Dynamic Programming
+**Patterns learned:**
+- LIFO validation
+- Expression evaluation
+- Monotonic increasing/decreasing stacks
 
-1D DP, 2D DP, knapsack, partitions, subsequences
+**Representative problems:**
+- Valid Parentheses  
+- Daily Temperatures  
+- Largest Rectangle in Histogram  
 
-✔ Heaps & Priority Queue
+---
 
-Scheduling, merging, streaming problems
+### 🔹 Linked Lists (Days 24–25)
 
-✔ Greedy Algorithms
+**Key intuition:**  
+> Linked list problems are about pointer manipulation, not values.
 
-Jump Game, Gas Station, Candy, Interval Scheduling
+**Patterns learned:**
+- Fast and slow pointers
+- Reversal via pointer reassignment
+- Cycle detection
 
-✔ Backtracking
+**Representative problems:**
+- Reverse Linked List  
+- Remove Nth Node From End  
+- Palindrome Linked List  
 
-Combinations, permutations, constraints
+---
 
-✔ Math & Bit Manipulation
+## 📈 Progress Tracking
 
-Multiple problems under each category — updated continuously.
+- ✔️ Arrays & Strings  
+- ✔️ Hashing & Sliding Window  
+- ✔️ Greedy Algorithms  
+- ✔️ Binary Search & Intervals  
+- ✔️ Stack & Linked List Fundamentals  
+- ⏳ Trees  
+- ⏳ Graphs  
+- ⏳ Dynamic Programming  
+- ⏳ Backtracking & Advanced Topics  
 
-🧩 My Approach to Learning DSA
+---
 
-I follow a structured learning cycle:
+## 🛠️ Tech Stack
 
-📌 Step 1 — Learn the Pattern
+- Language: Python
+- Platform: LeetCode
+- Version Control: Git & GitHub
 
-Understand template, common tricks, edge cases.
+---
 
-📌 Step 2 — Solve Train Set
+## 📌 Final Note
 
-Practice problems to build intuition.
+This repository reflects my **consistent effort, structured learning, and growth mindset**.  
+The goal is not just to solve problems, but to **think like an engineer during interviews**.
 
-📌 Step 3 — Solve Test Set
+I will continue updating this repository as I progress into **Trees, Graphs, DP, and System Design**.
 
-No hints, no solutions — evaluate mastery.
+---
 
-📌 Step 4 — Reflect
-
-What did I do wrong?
-
-What pattern did I miss?
-
-Where did I waste time?
-
-📌 Step 5 — Optimize
-
-Rewrite clean, optimal solutions.
-
-📈 Progress Tracking
-
-I actively update:
-
-Problem count
-
-Topic-wise progress
-
-Notes
-
-Optimized solutions
-
-Test results
-
-Contest performance
-
-My goal: Become interview-ready with 200+ high-quality solved problems.
-
-🎯 Goals
-Short-term goals
-
-Complete LeetCode study plans (Top 150, 75, 30 Days)
-
-Finish 200 core interview questions
-
-Strengthen problem-solving speed
-
-Long-term goals
-
-Crack a top-tier internship (2026 batch)
-
-Master all major DSA patterns
-
-Build deep confidence with coding interviews
-
-🛠️ Tech Stack
-
-Python (main language)
-
-Clean, modular code
-
-Time and space complexity for every solution
-
-Commented explanations
-
-💬 Final Notes
-
-This repository is not just for storing solutions —
-it's my complete engineering growth journal.
-
-Every problem solved improves:
-
-Pattern recognition
-
-Understanding edge cases
-
-Confidence in interviews
-
-Coding style
-
-If you're on the same journey, feel free to learn from it or suggest improvements.
+⭐ If you find this repository helpful, feel free to star it!
